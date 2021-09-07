@@ -43,5 +43,4 @@ setup(name='vatnumber',
         'suds': ['suds'],
         },
     test_suite="vatnumber.tests",
-    use_2to3=True,
     )

@@ -5,7 +5,7 @@ Check the VAT number depending of the country based on formula from
 http://sima-pc.com/nif.php (dead link, was http://web.archive.org/web/20120118023804/http://sima-pc.com/nif.php)
 http://en.wikipedia.org/wiki/Vat_number
 '''
-__version__ = '1.3'
+__version__ = '2.0'
 
 
 def _posint(x):
@@ -80,7 +80,7 @@ def check_vat_ar(vat):
         return False
     base = [5, 4, 3, 2, 7, 6, 5, 4, 3, 2]
     aux = 0
-    for i in xrange(10):
+    for i in range(10):
         aux += int(vat[i]) * base[i]
     aux = 11 - (aux - (int(aux / 11) * 11))
     if aux == 11:
