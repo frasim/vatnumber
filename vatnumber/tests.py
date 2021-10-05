@@ -204,7 +204,7 @@ class VatNumberTest(unittest.TestCase):
         Test vies
         '''
         for vat in VIES_NUMBERS:
-            self.assert_(vatnumber.check_vies(vat))
+            self.assertTrue(vatnumber.check_vies(vat))
 
     def test_countries(self):
         '''
